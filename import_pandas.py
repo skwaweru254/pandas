@@ -8,4 +8,4 @@ excel_data = pd.read_excel('/home/skwaweru254/Excel/salesContacts.xlsx', usecols
 
 data = pd.DataFrame(excel_data)
 
-print(excel_data)
+print(data)
