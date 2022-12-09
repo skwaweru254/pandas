@@ -2,9 +2,10 @@ import pandas as pd
 
 #   pip install xlrd==1.2.0 needed
 
-excel_data = pd.read_excel('/home/skwaweru254/Excel/salesContacts.xlsx')
+cols = [0, 4]
 
-data = pd.DataFrame(excel_data, columns=[])
+excel_data = pd.read_excel('/home/skwaweru254/Excel/salesContacts.xlsx', usecols=cols)
+
+data = pd.DataFrame(excel_data)
 
 print(excel_data)
-
